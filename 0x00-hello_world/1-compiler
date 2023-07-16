@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc "$CFILE" -c -o ${CFILE//.c/.a}
+gcc -c "$CFILE" -o "${CFILE%.a}.o"
