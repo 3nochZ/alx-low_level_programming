@@ -4,7 +4,7 @@
  * puts - prints using puts
  *
  * Description: only using puts, print \"Programming is like
-( * puts: use puts)*
+ * int main(void) - use puts
  * Return: return 0, if successful.
  */
 int main(void)
