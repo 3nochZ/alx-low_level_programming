@@ -3,8 +3,8 @@
 /**
  * puts - prints using puts
  *
- * Description: only using puts, print \"Programming is like
  * main - Use the funtion puts
+ * Description: only using puts
  * Return: return 0, if successful. Non-zero on failure.
  */
 int main(void)
