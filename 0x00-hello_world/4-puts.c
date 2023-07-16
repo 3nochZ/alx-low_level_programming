@@ -4,8 +4,7 @@
  * puts - prints using puts
  *
  * Description: only using puts, print \"Programming is like
- * Responsible for:
- * puts("\"Programming is like building a multilingual puzzle")
+ * 
  * Return: return 0, if successful. Non-zero on failure.
  */
 int main(void)
