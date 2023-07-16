@@ -3,7 +3,7 @@
 /**
  * puts - prints using puts
  *
- * Description: only using puts, print \"Programming is like building a multilingual puzzle
+ * Description: only using puts, print \"Programming is like 
  * Return: return 0, if successful.
  */
 int main(void)
