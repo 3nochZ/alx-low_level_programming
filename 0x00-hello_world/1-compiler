@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c "$CFILE" -o "${CFILE%.a}.o"
+gcc -c "$CFILE" -o "${CFILE//.c/.o}" | cat main.o
