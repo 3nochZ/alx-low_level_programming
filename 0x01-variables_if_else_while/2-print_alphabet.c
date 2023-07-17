@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - lower case 
+ * main - lower case
  * Return: 0 if successful
  */
 int main(void)
@@ -16,5 +16,5 @@ int main(void)
 
 	putchar('\n');
 
-	return 0;
+	return (0);
 }
