@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	gcc -s "$CFILE" -0 "${CFILE//.c/.s}";
+	gcc -S "$CFILE" -0 "${CFILE//.c/.s}";
 	return (0);
 }
