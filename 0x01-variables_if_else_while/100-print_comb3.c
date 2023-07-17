@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/**
+ * main - two digit combination
+ * Return: 0 if successful
+ */
 int main(void)
 {
 	int num1 = 0;
@@ -7,7 +11,7 @@ int main(void)
 	while (num1 < 9)
 	{
 		int num2 = num1 + 1;
-		
+
 		while (num2 <= 9)
 		{
 			putchar(num1 + '0');
