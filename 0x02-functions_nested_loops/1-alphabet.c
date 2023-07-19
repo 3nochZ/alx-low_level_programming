@@ -4,8 +4,9 @@
  * main - print the alphabet
  * Return: Always 0
  */
-int main(void)
-{	char letter = 'a';
+void print_alphabet(void)
+{	
+	char letter = 'a';
 
 	while (letter <= 'z')
 	{
