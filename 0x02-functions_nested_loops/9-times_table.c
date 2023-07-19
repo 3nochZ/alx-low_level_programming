@@ -14,36 +14,19 @@ void times_table(void)
 		{
 			int result = i * j;
 
-			if (result == 0)
+			if (j == 0)
 			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar('0');
+				_putchar('0' + result / 10);
+				_putchar('0' + result % 10);
+			}
+			else 
+			{
 				_putchar(',');
-			}
-			else if (result < 10)
-			{
 				_putchar(' ');
-				_putchar(' ');
-				_putchar(result + '0');
-				_putchar(',');
+				_putchar('0' + result / 10);
+				_putchar('0' + result % 10);
 			}
-			else if (result < 100)
-			{
-				if (result % 9 == 0)
-				{
-					_putchar(' ');
-					_putchar(result / 10 + '0');
-					_putchar(result % 10 + '0');
-				}
-				else if (result % 9 != 0)
-				{
-					_putchar(' ');
-					_putchar(result / 10 + '0');
-					_putchar(result % 10 + '0');
-					_putchar(',');
-				}
-			}
+				
 		}
 		_putchar('\n');
 	}
