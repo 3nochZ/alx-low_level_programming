@@ -2,6 +2,7 @@
 
 /**
  * _islower - detect lowercase
+ * @c: int c
  * Return: 1 if successful, 0 otherwise
  */
 
