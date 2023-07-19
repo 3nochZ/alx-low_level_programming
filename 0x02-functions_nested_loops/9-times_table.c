@@ -30,10 +30,19 @@ void times_table(void)
 			}
 			else if (result < 100)
 			{
-				_putchar(' ');
-				_putchar(result / 10 + '0');
-				_putchar(result % 10 + '0');
-				_putchar(',');
+				if (result % 9 = 0)
+				{
+					_putchar(' ');
+					_putchar('result / 10 + '0');
+					_putchar('result % 10 + '0');
+				}
+				else if
+				{
+					_putchar(' ');
+					_putchar(result / 10 + '0');
+					_putchar(result % 10 + '0');
+					_putchar(',');
+				}
 			}
 		}
 		_putchar('\n');
