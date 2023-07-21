@@ -3,13 +3,11 @@
 /**
  * _isupper - checks for uppercase letters
  * @c: character to be checked
- * Return: 1 if uppercase, o otherwise
+ * Return: 1 if uppercase, 0 otherwise
  */
 
 int _isupper(int c)
 {
-	int c;
-
 	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
