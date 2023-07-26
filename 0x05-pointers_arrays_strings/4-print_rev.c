@@ -5,7 +5,7 @@
  * @str: string to be printed
  */
 
-void _print_rev(char *s)
+void print_rev(char *s)
 {
 	while (*s != '\0')
 	{
