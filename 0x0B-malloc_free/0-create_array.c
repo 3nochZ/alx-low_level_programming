@@ -3,12 +3,12 @@
 
 /**
  * create_array - creates an array of chars and initializes it.
- * @unsigned int size: parameter one
+ * @size: parameter one
  * @c:  char
  * Return: array
  */
 
-char* create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	char *array;
 
@@ -17,7 +17,7 @@ char* create_array(unsigned int size, char c)
 		return (NULL);
 	}
 
-	array = (char*)malloc(size * sizeof(char));
+	array = (char *)malloc(size * sizeof(char));
 
 	if (array != NULL)
 	{
