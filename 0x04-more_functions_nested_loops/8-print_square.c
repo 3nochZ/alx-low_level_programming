@@ -7,7 +7,6 @@
 
 void print_square(int size)
 {
-	
 	int i;
 	int j;
 
@@ -24,7 +23,7 @@ void print_square(int size)
 			{
 				_putchar('#');
 			}
-		
+
 		_putchar('\n');
 		}
 	}
