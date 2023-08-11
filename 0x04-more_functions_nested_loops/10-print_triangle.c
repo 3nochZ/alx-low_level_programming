@@ -5,7 +5,7 @@
  * @size: the base and side length of the triangle
  */
 
-void print_trinagle(int size)
+void print_triangle(int size)
 {
 	int i, j, k;
 
