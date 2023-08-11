@@ -34,9 +34,15 @@ long largestPrimeFactor(long n)
 	}
 }
 
+/**
+ * main - finds largest prime factor
+ * Return: 0 if successfull
+ */
+
 int main(void)
 {
 	long num = 612852475143;
+
 	printf("%ld\n", largestPrimeFactor(num));
 
 	return (0);
