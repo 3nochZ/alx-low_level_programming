@@ -10,6 +10,11 @@ void rev_string(char *s)
 	int len = 0;
 	const char *end = s;
 
+	if (s == NULL)
+	{
+		return;
+	}
+
 	while (*end != '\0')
 	{
 		end++;
@@ -22,5 +27,4 @@ void rev_string(char *s)
 		end--;
 		len--;
 	}
-	_putchar('\n');
 }
