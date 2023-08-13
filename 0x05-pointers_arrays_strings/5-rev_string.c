@@ -8,24 +8,16 @@
 
 void rev_string(char *s)
 {
-	int len = 0;
-	const char *end = s;
+	int left = 0;
+	int right = _strlen(s) - 1;
 
-	if (s == NULL)
+	while (left < right)
 	{
-		return;
-	}
+		char temp = s[left];
+		s[left] = s[right];
+		s[right] = temp;
 
-	while (*end != '\0')
-	{
-		end++;
-		len++;
-	}
-
-	while (len > 0)
-	{
-		_putchar(*(end - 1));
-		end--;
-		len--;
+		left++;
+		right--;
 	}
 }
