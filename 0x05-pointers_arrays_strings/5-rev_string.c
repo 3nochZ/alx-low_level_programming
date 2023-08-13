@@ -17,15 +17,13 @@ void rev_string(char *s)
 		s++;
 	}
 
-	int right = len;
-
-	while (left < right)
+	while (left < len)
 	{
 		char temp = s[left];
-		s[left] = s[right];
-		s[right] = temp;
+		s[left] = s[len];
+		s[len] = temp;
 
 		left++;
-		right--;
+		len--;
 	}
 }
