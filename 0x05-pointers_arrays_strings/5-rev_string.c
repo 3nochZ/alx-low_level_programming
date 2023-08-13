@@ -8,9 +8,15 @@
 
 void rev_string(char *s)
 {
+	int len = 0;
 	int left = 0;
-	int right = _strlen(s) - 1;
+	int right = len;
 
+	while (*s != 0)
+	{
+		len++;
+		s++;
+	}
 	while (left < right)
 	{
 		char temp = s[left];
