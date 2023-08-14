@@ -1,11 +1,5 @@
 #include <stdio.h>
-
-struct dog
-{
-	char *name;
-	float age;
-	char *owner;
-};
+#include "dog.h"
 
 /**
  * init_dog - function
