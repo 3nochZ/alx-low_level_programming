@@ -1,6 +1,10 @@
 #ifndef DOG_H
 #define DOG_H
 
+/**
+ * struct dog - data structure that represents a dog
+ */
+
 struct dog
 {
 	char *name;
