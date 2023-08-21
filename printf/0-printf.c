@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
+#include "main.h"
 
 int _printf(const char *format, ...) {
     va_list args;
@@ -15,7 +16,7 @@ int _printf(const char *format, ...) {
                 case 'c': {
                     // Print a single character
                     int c = va_arg(args, int);
-                    putchar(c);
+                    _putchar(c);
                     count++;
                     break;
                 }
@@ -23,7 +24,7 @@ int _printf(const char *format, ...) {
                     // Print a string
                     const char *s = va_arg(args, const char *);
                     while (*s != '\0') {
-                        putchar(*s);
+                        _putchar(*s);
                         s++;
                         count++;
                     }
@@ -31,14 +32,16 @@ int _printf(const char *format, ...) {
                 }
                 case '%': {
                     // Print a literal '%'
-                    putchar('%');
+                    _putchar('%');
                     count++;
                     break;
                 }
             }
-        } else {
+        } 
+	else 
+	{
             // Print regular characters
-            putchar(*format);
+            _putchar(*format);
             count++;
         }
 
