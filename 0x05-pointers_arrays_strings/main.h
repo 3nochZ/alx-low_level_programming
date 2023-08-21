@@ -24,7 +24,7 @@ int _strlen(char *s)
         }
 
         return (length);
-};
+}
 
 void puts2(char *str);
 
