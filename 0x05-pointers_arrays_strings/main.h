@@ -13,9 +13,9 @@ void print_rev(char *s);
 
 void rev_string(char *s);
 
-int _strlen(char *s)
+long _strlen(char *s)
 {
-        int length = 0;
+        long length = 0;
 
         while (*s != '\0')
         {

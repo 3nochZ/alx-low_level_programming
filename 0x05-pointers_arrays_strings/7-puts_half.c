@@ -3,7 +3,7 @@
 
 /**
  * puts_half - prints the second half of a string
- * str: string to be printed
+ * @str: string to be printed
  */
 
 void puts_half(char *str)
@@ -15,9 +15,9 @@ void puts_half(char *str)
 
 	else
 	{
-		int i;
-		int len = _strlen(str);
-		int n = len / 2;
+		long i;
+		long len = _strlen(str);
+		long n = len / 2;
 
 		if (len % 2 == 1)
 		{
