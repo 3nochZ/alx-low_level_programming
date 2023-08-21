@@ -13,7 +13,18 @@ void print_rev(char *s);
 
 void rev_string(char *s);
 
-int _strlen(char *s);
+int _strlen(char *s)
+{
+        int length = 0;
+
+        while (*s != '\0')
+        {
+                length++;
+                s++;
+        }
+
+        return (length);
+};
 
 void puts2(char *str);
 
