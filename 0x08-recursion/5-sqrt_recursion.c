@@ -1,38 +1,28 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * sqrt_helper - performs recursive calculation
  * @n: number
- * @start: second parameter
- * @end: thrid parameter
+ * @start: possible square root
+ * Return: square root
  */
 
-int sqrt_helper(int n, int start, int end)
+int sqrt_helper(int n, int start)
 {
-	int mid;
-	int square;
+	if (start * start == n)
+	{
+		return (start);
+	}
 
-	if (start > end)
+	else if (start * start > n)
 	{
 		return (-1);
 	}
 
-	mid = start + (end - start) / 2;
-	square = mid * mid;
-
-	if (square == n)
-	{
-		return (n);
-	}
-
-	else if (square < n)
-	{
-		return (sqrt_helper(n, mid + 1, end));
-	}
-
 	else
 	{
-		return (sqrt_helper(n, start, mid - 1));
+		return (sqrt_helper(n, start + 1));
 	}
 }
 
@@ -48,9 +38,23 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	
+
 	else
 	{
-		return sqrt_helper(n, 0, n);
+		return (sqrt_helper(n, 0));
 	}
+}
+
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	int r;
+
+	r = _sqrt_recursion(4096);
+	printf("%d\n", r);
+	return (0);
 }
