@@ -6,7 +6,7 @@
  * main - entry point
  * @argc: arg count
  * @argv: arg vector
- * Retutn: 0
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
@@ -18,7 +18,6 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 		return (0);
-	
 	}
 
 	else
