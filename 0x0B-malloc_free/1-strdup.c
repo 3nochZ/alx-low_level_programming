@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * _strup - returns a pointer to a new duplicate string
+ * _strdup - returns a pointer to a new duplicate string
  * @str: string
  * Return: Duplicate
  */
@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	}
 
 	len = strlen(str);
-	duplicate = malloc((len + 1) *sizeof(char));
+	duplicate = malloc((len + 1) * sizeof(char));
 
 	if (duplicate == NULL)
 	{
