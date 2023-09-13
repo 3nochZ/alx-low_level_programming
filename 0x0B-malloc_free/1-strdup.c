@@ -8,21 +8,39 @@
  * Return: Duplicate
  */
 
-char _strdup(char *str)
+char *_strdup(char *str)
 {
+	int len;
+	char *duplicate;
+
 	if (str == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 
-	int length = strlen(str);
-	char *duplicate = malloc((length + 1) *sizeof(char));
+	len = strlen(str);
+	duplicate = malloc((len + 1) *sizeof(char));
 
 	if (duplicate == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 
 	strcpy(duplicate, str);
-	return(duplicate);
+	return (duplicate);
+}
+
+int main(void)
+{
+    char *s;
+
+    s = _strdup("ALX SE");
+    if (s == NULL)
+    {
+        printf("failed to allocate memory\n");
+        return (1);
+    }
+    printf("%s\n", s);
+    free(s);
+    return (0);
 }
