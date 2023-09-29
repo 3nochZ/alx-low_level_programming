@@ -2,6 +2,6 @@
 #define MAIN_H
 
 void _puts_recursion(char *s);
-int putchar(char c);
+int _putchar(char c);
 
 #endif
