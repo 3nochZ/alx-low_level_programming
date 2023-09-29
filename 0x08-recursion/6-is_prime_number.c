@@ -12,19 +12,19 @@ int prime_helper(int num, int i)
 {
 	if (i == 1)
 	{
-		return (0);
+		return (1);
 	}
 
 	else if (num % i == 0 && i > 0)
 	{
 		return (0);
 	}
-	
-	return(prime_helper(num, i - 1));
+
+	return (prime_helper(num, i - 1));
 }
 
 /**
- * is_prime_number: finds out a prime number
+ * is_prime_number - finds out a prime number
  * @n: number
  * Return: 1
  */
