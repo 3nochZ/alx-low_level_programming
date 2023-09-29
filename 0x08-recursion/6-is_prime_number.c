@@ -31,10 +31,10 @@ int prime_helper(int num, int i)
 
 int is_prime_number(int n)
 {
-	if (n =< 1)
+	if (n < 2)
 	{
 		return (0);
 	}
 
-	return (prime_helper(n, i - 1));
+	return (prime_helper(n, n - 1));
 }
