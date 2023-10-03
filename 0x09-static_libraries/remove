@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Set the directory containing the object files
+directory="/alx-low_level_programming/0x09-static_libraries"
+
+# Remove all files with .o extension
+find "$directory" -type f -name "*.o" -delete
+
+# Check if the removal was successful
+if [ $? -eq 0 ]; then
+    echo "Removed all .o files in $directory"
+else
+    echo "Failed to remove .o files in $directory"
+fi

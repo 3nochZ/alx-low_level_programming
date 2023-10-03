@@ -1,0 +1,8 @@
+#!/bin/bash
+
+dir="/alx-low_level_programming/0x09-static_libraries"
+
+for file in $dir/*.c; do
+	filename=$(basename "$file" .c)
+	gcc -c -o "$filename.o" "$file"
+done
