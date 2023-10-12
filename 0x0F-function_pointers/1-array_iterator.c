@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "function_pointers"
+#include "function_pointers.h"
 
 /**
  * array_iterator - iterators over elements of array
@@ -10,7 +10,7 @@
 
 void array_iterator(int *array, size_t size, void(*action)(int))
 {
-	int i;
+	unsigned int i;
 
 	if (array == NULL || action == NULL)
 		return;
